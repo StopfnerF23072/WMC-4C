@@ -1,0 +1,10 @@
+{
+  "name": "node-pwm-gen",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Fabian Stopfner",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {}
+}

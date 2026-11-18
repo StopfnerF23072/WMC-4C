@@ -1,0 +1,15 @@
+@URL = http://localhost:3000
+
+### GET /api/users
+GET {{URL}}/api/users
+
+### GET /api/users/s
+GET {{URL}}/api/users?name=s
+
+### POST /api/users
+POST {{URL}}/api/users
+Content-Type: application/json
+
+{
+    "name": "Timo"
+}

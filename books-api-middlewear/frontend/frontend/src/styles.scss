@@ -1,0 +1,35 @@
+@use '@angular/material' as mat;
+
+$useMaterial: true;
+$useBootstrap: true;
+
+html {
+  height: 100%;
+
+  @if $useMaterial {
+    @include mat.theme((color: (primary: mat.$azure-palette,
+          tertiary: mat.$blue-palette,
+        ),
+        typography: Roboto,
+        density: 0,
+      ));
+  }
+}
+
+body {
+  @if $useMaterial {
+    color-scheme: light; // or 'dark' or 'light dark'
+    background-color: var(--mat-sys-surface);
+    color: var(--mat-sys-on-surface);
+    font: var(--mat-sys-body-medium);
+  }
+
+  margin: 0;
+  height: 100%;
+}
+
+@if $useBootstrap {
+  @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+}
+
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";

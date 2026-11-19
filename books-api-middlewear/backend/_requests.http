@@ -1,0 +1,28 @@
+### Alle Bucher abrufen
+GET http://localhost:3000/books
+
+### Ein Buch anhand der ID abrufen
+GET http://localhost:3000/books/2
+
+### Neues Buch hinzufügen
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "The Hobbit",
+  "author": "J. R. R. Tolkien",
+  "year": 1937
+}
+
+### Buch aktualisieren
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "year": 1925
+}
+
+### Buch löschen
+DELETE http://localhost:3000/books/5

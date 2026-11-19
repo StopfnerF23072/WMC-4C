@@ -1,0 +1,5 @@
+{
+  "eslint.validate": ["typescript"],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "html.format.wrapAttributes": "force-aligned"
+}
